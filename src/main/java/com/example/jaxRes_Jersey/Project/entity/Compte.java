@@ -1,9 +1,11 @@
 package com.example.jaxRes_Jersey.Project.entity;
 
 import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 
 import java.util.Date;
 
@@ -11,6 +13,7 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@XmlRootElement
 public class Compte {
 
     @Id

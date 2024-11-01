@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -13,18 +13,24 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jaxRes-Jersey-Project</name>
 	<description>jaxRes-Jersey Project for Spring Boot</description>
-	<url/>
+	<url>http://www.example.com</url> <!-- Update this with your project URL -->
 	<licenses>
-		<license/>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<id>your-id</id>
+			<name>Your Name</name>
+			<email>your-email@example.com</email>
+		</developer>
 	</developers>
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection>scm:git:git://github.com/your/repo.git</connection> <!-- Update with your SCM URL -->
+		<developerConnection>scm:git:ssh://github.com/your/repo.git</developerConnection> <!-- Update with your SCM URL -->
+		<url>http://github.com/your/repo</url> <!-- Update with your SCM URL -->
 	</scm>
 	<properties>
 		<java.version>17</java.version>
@@ -42,7 +48,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -64,10 +69,23 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- JAXB API -->
 		<dependency>
-			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>2.3.1</version>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+		<!-- JAXB Implementation -->
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+		<!-- Jersey Media JAXB Module -->
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-jaxb</artifactId>
+			<version>3.1.1</version>
 		</dependency>
 	</dependencies>
 
@@ -87,5 +105,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
