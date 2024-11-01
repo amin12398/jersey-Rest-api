@@ -5,9 +5,9 @@
 ### Démonstration JSON
 Voici une démonstration de l'utilisation du format JSON.
 
-![Démonstration JSON](lien_vers_ta_video_json)
+[![Démonstration JSON](https://img.youtube.com/vi/ID_DE_LA_VIDEO/maxresdefault.jpg)](videos/json.mp4)
 
 ### Démonstration XML
 Voici une démonstration de l'utilisation du format XML.
 
-![Démonstration XML](lien_vers_ta_video_xml)
+[![Démonstration XML](https://img.youtube.com/vi/ID_DE_LA_VIDEO/maxresdefault.jpg)](videos/xml.mp4)
